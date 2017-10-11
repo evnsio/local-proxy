@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nginx:
+    build: .
+    image: evns/local-proxy
+    environment:
+      IP: 192.168.99.100
+      PORT: 30881
+    ports:
+      - "80:80"
