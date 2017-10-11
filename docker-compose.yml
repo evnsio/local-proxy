@@ -4,7 +4,7 @@ services:
     build: .
     image: evns/local-proxy
     environment:
-      IP: 192.168.99.100
-      PORT: 30881
+      IP: <destination_ip>
+      PORT: <destination_port>
     ports:
       - "80:80"
